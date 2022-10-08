@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif ;
+}
+body {
+    height: 60vh;
+    background-image:url(/SmartBuy/img/ales-nesetril-ex_p4AaBxbs-unsplash.jpg);
+    background-position:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+ .login { 
+    height: 550px;
+    position: absolute;
+}
+
+.formulario{
+    width: 400px;
+    position:absolute;
+    background-color: white;
+    border: 5px solid rgb(36, 147, 199);
+    border-radius: 10px;
+    padding: 30px 60px;
+    top:500px;
+    left: 50%; 
+    transform: translate(-50%);
+}
+
+.formulario input,label,button{
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+
+}
+.formulario input{
+    height: 40px;
+    border: 2px solid rgb(36, 147, 199);
+    border-radius: 10px;
+    padding : 0 8px;
+}
+.formulario button{
+
+    margin-top: 20px;
+    cursor: pointer;
+    border:none;
+    height: 40px;
+    background-color: rgb(36, 147, 199);
+    box-shadow: 1px 1px 2px black;
+    color: white;
+}
+.formulario button:hover{
+    background-color:rgb(36, 147, 199);
+}
