@@ -1,7 +1,24 @@
 <?php
 session_start();
-if(isset($_SESSION['user'])){
+/*if(isset($_SESSION['user'])){
     header("location: indexmenu.php");
+}*/
+if(isset($_SESSION['user'])){
+    
+    /*switch($_SESSION['rol']){
+        case 0:
+            header("location: indexmenu.php");
+            break; 
+
+        case 1:
+            header("location: indexMenuAdmin.php");
+            break;
+            
+        default:
+
+
+    }*/
+   
 }
 
 ?>
@@ -41,10 +58,10 @@ if(isset($_SESSION['user'])){
                 <!--Formulario de Login y registro-->
                 <div class="contenedor__login-register">
                     <!--Login-->
-                    <form action="php/login_user.php" method = "POST" class="formulario__login">
+                    <form action="php/login_user.php" method = "POST" class="formulario__login" id="login">
                         <h2>Iniciar Sesión </h2>
-                        <input type="email" placeholder="Correo Electrónico" name = "correo">
-                        <input type="password" placeholder="Contraseña" name = "contrasena">
+                        <input type="email" placeholder="Correo Electrónico" name = "correo" id= "user">
+                        <input type="password" placeholder="Contraseña" name = "contrasena" id= "password">
                         <button>Entrar</button>
                     </form>
 
@@ -72,8 +89,8 @@ if(isset($_SESSION['user'])){
                                 <option value="Estudiante">Estudiante </option>
                                 <option value="Independiente">Independiente</option>
                                 <option value="Pensionado">Pensionado</option>
-                                <option value="Desempleado3">Desempleado</option>
-                                <option value="Asalariado3">Asalariado</option>
+                                <option value="Desempleado">Desempleado</option>
+                                <option value="Asalariado">Asalariado</option>
                             </select>
                         </div>
                         <div class="box">
@@ -98,5 +115,6 @@ if(isset($_SESSION['user'])){
         </main>
 
         <script src="assets/js/script.js"></script>
+        <script src="/JavaScript/code.js"></script>
 </body>
 </html>

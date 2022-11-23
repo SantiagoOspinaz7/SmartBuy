@@ -32,6 +32,8 @@
   <body>
     
     <h1>hola, bienvenidos</h1>
+    <h2> Proximamente buscador de tarjetas </h2>
+    <a href="/dash/indexUser.php">Regresar </a>
     <a href="php/cerrar_sesion.php">Cerrar sesión </a>
   </body>
 </html>
